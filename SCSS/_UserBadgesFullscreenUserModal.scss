@@ -1,0 +1,152 @@
+/*-----------------------------------------
+	User Badges Fullscreen User Modal
+-----------------------------------------*/
+
+// Imports
+@use "Helpers" as *;
+
+$Wapour-badge-size: 18px;
+
+/* Make default colour for Banner the current Client Colour */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .banner-2QYc2d
+{
+    background-color: var(--background-primary)!important;
+}
+
+/* Banner Default to Client Base Colour */
+// {
+
+// }
+
+/*----------------------------------------------------------------------------------*/
+
+/* Padding for Badge */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .badgeList-1R1WgZ [aria-label="HypeSquad Brilliance"]
+{
+    margin-left: 22px;
+}
+
+/* Create Badge, Removes Banner */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1
+{
+    background-image: $Wapour-badge;
+    background-repeat: no-repeat;
+    
+    background-size: $Wapour-badge-size;
+    width: $Wapour-badge-size; 
+    height: $Wapour-badge-size;
+
+    position: absolute;
+    z-index: 1;
+    top: 139px;
+    left: 162px;
+}
+
+/* Increase margin underneath banner to replace it */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .nameTagNoCustomStatus-3IWmZC
+{
+    margin-top: 196px;
+}
+
+/* Place Pencil Profile Edit back to its original location */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .pencilContainer-2TbNwJ
+{
+    display: none;
+    // top: -125px;
+    // right: -404px;
+    // width: 23px;
+}
+
+/* Place Avatar back to its original location */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .avatar-AvHqJA
+{
+    top: -144px;
+}
+
+/*  Place Badgelist back to its original location */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .headerTop-547GTz
+{
+    top: -60px;
+}
+
+/* Hover when the mouse is over the badge */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:hover
+{
+	cursor: pointer;
+    height: $Wapour-badge-size;
+}
+
+/* Spin on click held */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:active
+{
+	-webkit-animation: rotate 1s infinite linear;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/* Badge Info Bubble */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:before
+{
+    -webkit-animation: popout-bubble $bubble-popout-time;
+
+	content: "";
+    width: 0px;
+    color: var(--text-normal);
+    font-weight: 500;
+	font-size: 14px;
+
+    background-color: var(--background-floating);
+    box-shadow: var(--elevation-high);
+    border-radius: 6px;
+
+	padding: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+
+    position: absolute;
+	left: -50px; 
+	bottom: 45px;
+
+	opacity: 0;
+}
+
+/* Bubble Hover */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:hover:before
+{
+    -webkit-animation: popin-bubble $bubble-popin-time;
+
+	content: "Theme Developer";
+	width: 105px;
+
+	padding: 9px;
+	padding-right: 12px;
+	padding-left: 12px;
+
+	opacity: 1;
+}
+
+/* Badge Info Triangle */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:after
+{
+    -webkit-animation: popout-triangle $bubble-popout-time;
+
+    content: "";
+
+	border-width: 0px 0px 0 0px;
+	border-style: solid;
+	border-color: var(--background-floating) transparent transparent transparent;
+
+    position: absolute;
+    bottom: 40px;
+    left: -2px;
+}
+
+/* Triangle Hover */
+.fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:hover:after
+{
+    content: "";
+    
+	border-width: 10px 11px 0 11px;
+}
+
+/*----------------------------------------------------------------------------------*/

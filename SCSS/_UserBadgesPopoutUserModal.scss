@@ -1,0 +1,150 @@
+/*-----------------------------------------
+	User Badges Popout User Modal
+-----------------------------------------*/
+
+// Imports
+@use "Helpers" as *;
+
+$Wapour-badge-size: 18px;
+
+/* Change animation for Popout so that the bubble isn't visible */
+.userPopout-xaxa6l[data-user-id="142795541833580544"]
+{
+	-webkit-animation: popin-modal 0.4s;
+}
+
+/* Fix Creation Date Plugin Bug with Animation */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .creationDate-CJwdKT
+{
+	max-width: 268.021px!important;
+}
+
+/* Make default colour for Banner the current Client Colour */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .banner-2QYc2d
+{
+    background-color: var(--background-primary)!important;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/* Padding for Badge, move back to original location */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .profileBadges-ohc0Vu
+{
+	top: 76px;
+}
+
+/* Create Badge, Removes Banner */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg
+{
+    background-image: $Wapour-badge;
+    background-repeat: no-repeat;
+    
+    background-size: $Wapour-badge-size;
+    width: $Wapour-badge-size; 
+    height: $Wapour-badge-size;
+
+    position: absolute;
+    z-index: 1;
+    top: 78px;
+    left: 170px;
+}
+
+/* Increase margin underneath banner to replace it */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .headerTop-3vNv-a
+{
+    padding-top: 124px;
+}
+
+/* Place Pencil Profile Edit back to its original location */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .pencilContainer-2TbNwJ
+{
+    display: none;
+}
+
+/* Place Avatar back to its original location */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .avatarWrapperNormal-26WQIb 
+{
+    top: 16px;
+}
+
+/* Hover when the mouse is over the badge */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:hover
+{
+	cursor: pointer;
+    height: $Wapour-badge-size;
+}
+
+/* Spin on click held */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:active
+{
+	-webkit-animation: rotate 1s infinite linear;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/* Badge Info Bubble */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:before
+{
+    -webkit-animation: popout-bubble $bubble-popout-time;
+
+	content: "";
+    width: 0px;
+    color: var(--text-normal);
+    font-weight: 500;
+	font-size: 14px;
+
+    background-color: var(--background-floating);
+    box-shadow: var(--elevation-high);
+    border-radius: 6px;
+
+	padding: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+
+    position: absolute;
+	left: -50px; 
+	bottom: 44px;
+
+	opacity: 0;
+}
+
+/* Bubble Hover */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:hover:before
+{
+    -webkit-animation: popin-bubble $bubble-popin-time;
+
+	content: "Theme Developer";
+	width: 105px;
+
+	padding: 9px;
+	padding-right: 12px;
+	padding-left: 12px;
+
+	opacity: 1;
+}
+
+/* Badge Info Triangle */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:after
+{
+    -webkit-animation: popout-triangle $bubble-popout-time;
+
+    content: "";
+
+	border-width: 0px 0px 0 0px;
+	border-style: solid;
+	border-color: var(--background-floating) transparent transparent transparent;
+
+    position: absolute;
+    bottom: 38px;
+    left: -2px;
+}
+
+/* Triangle Hover */
+.userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:hover:after
+{
+    content: "";
+    
+	border-width: 10px 11px 0 11px;
+}
+
+/*----------------------------------------------------------------------------------*/

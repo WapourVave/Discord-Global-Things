@@ -1,0 +1,52 @@
+// Global Variables
+$Wapour-pink: #ff007e;
+$Wapour-badge: url('https://steamcommunity-a.akamaihd.net/economy/emoticonlarge/b1');
+$bubble-popin-time: 0.1s;
+$bubble-popout-time: 0.1s;
+
+// /* Root Variables */
+// :root
+// {
+
+// }
+
+/* Global Animations */
+@keyframes rotate
+{
+	0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes popin 
+{
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes popin-modal
+{
+    0% { opacity: 0; transform-origin: right; transform: scale(0.5, 1); -webkit-transform: translate3d(10px,0,0); }
+    100% { opacity: 1; transform: scale(1, 1); }
+}
+
+@keyframes popin-bubble
+{
+    0% { opacity: 0; transform: scale(0.9); content: "Theme Developer"; padding: 9px; width: 105px; }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes popout-bubble
+{
+    0% { opacity: 1; transform: scale(1); content: "Theme Developer"; padding: 9px; padding-right: 12px;
+         padding-left: 12px; width: 105px; }
+    100% { opacity: 0; transform: scale(0.9); padding: 9px; padding-right: 12px;
+        padding-left: 12px; width: 105px; }
+}
+
+@keyframes popout-triangle
+{
+    0% { opacity: 1; transform: scale(1); content: ""; border-width: 10px 11px 0 11px; }
+    100% { opacity: 0; transform: scale(0.9); border-width: 0px 0px 0 0px; }
+}
+
+/*----------------------------------------------------------------------------------*/
