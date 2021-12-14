@@ -1,7 +1,7 @@
 /**
- * @name Wapours Global Things
+ * @name Wapours Global Things Live
  * @version X.X.X
- * @author Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Enable Me Please! ->
+ * @author Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀Enable Me Please! ->
  * @authorLink https://github.com/WapourVave
  * @description Global Theme for reused elements.
  * @website https://github.com/WapourVave
@@ -22,21 +22,21 @@ $icon-position: 10px 12px;
 $icon-unicode: "🌍";
 $icon-unicode-font-size: 16px;
 
-$version: "v1.0.0 ";
-$author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
+$version: "v1.0.1 ";
+$author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
 
 /*-----------------------------------------
 				Themes Area
 -----------------------------------------*/
 
 /* Hide default BD Theme Icon */
-[id='Wapours Global Things-card'] .bd-addon-header .bd-icon path
+[id='Wapours Global Things Live-card'] .bd-addon-header .bd-icon path
 {
 	display: none;
 }
 
 /* New Theme Icon */
-[id='Wapours Global Things-card'] .bd-addon-header
+[id='Wapours Global Things Live-card'] .bd-addon-header
 {
 	background-image: $icon-image;
 	background-repeat: no-repeat;
@@ -45,7 +45,7 @@ $author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 
 }
 
 /* New Theme Icon Unicode */
-[id='Wapours Global Things-card'] .bd-addon-header:before
+[id='Wapours Global Things Live-card'] .bd-addon-header:before
 {
 	content: $icon-unicode;
 	font-size: $icon-unicode-font-size;
@@ -54,23 +54,23 @@ $author: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 
 }
 
 /* Remove pre-existing text */
-[id='Wapours Global Things-card'] .bd-version, 
-[id='Wapours Global Things-card'] .bd-author, 
-[id='Wapours Global Things-card'] .bd-title .bd-link
+[id='Wapours Global Things Live-card'] .bd-version, 
+[id='Wapours Global Things Live-card'] .bd-author, 
+[id='Wapours Global Things Live-card'] .bd-title .bd-link
 {
  	font-size: 0px;
 }
 
 /* True AMOLED Version */
-[id='Wapours Global Things-card'] .bd-version:after
+[id='Wapours Global Things Live-card'] .bd-version:after
 {
 	font-size: 14px;
 	content: $version;
 }
 
 /* True AMOLED Author */
-[id='Wapours Global Things-card'] .bd-author:after,
-[id='Wapours Global Things-card'] .bd-title .bd-link:after
+[id='Wapours Global Things Live-card'] .bd-author:after,
+[id='Wapours Global Things Live-card'] .bd-title .bd-link:after
 {
 	font-size: 14px;
 	content: $author;
