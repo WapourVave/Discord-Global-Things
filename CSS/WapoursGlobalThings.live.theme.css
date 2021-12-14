@@ -45,7 +45,7 @@
 /* True AMOLED Version */
 [id="Wapours Global Things Live-card"] .bd-version:after {
   font-size: 14px;
-  content: "v1.0.1 ";
+  content: "v1.0.3 ";
 }
 
 /* True AMOLED Author */
@@ -160,7 +160,7 @@
 -----------------------------------------*/
 /* Make default colour for Banner the current Client Colour */
 .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .banner-2QYc2d {
-  background-color: var(--background-primary) !important;
+  background-color: transparent !important;
 }
 
 /* Banner Default to Client Base Colour */
@@ -254,7 +254,7 @@
   border-style: solid;
   border-color: var(--background-floating) transparent transparent transparent;
   position: absolute;
-  bottom: 40px;
+  bottom: 42px;
   left: -2px;
 }
 
@@ -280,7 +280,7 @@
 
 /* Make default colour for Banner the current Client Colour */
 .userPopout-xaxa6l[data-user-id="142795541833580544"] .banner-2QYc2d {
-  background-color: var(--background-primary) !important;
+  background-color: transparent !important;
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -368,7 +368,7 @@
   border-style: solid;
   border-color: var(--background-floating) transparent transparent transparent;
   position: absolute;
-  bottom: 38px;
+  bottom: 40px;
   left: -2px;
 }
 
