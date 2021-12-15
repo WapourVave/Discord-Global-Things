@@ -3,9 +3,12 @@
 -----------------------------------------*/
 
 // Imports
-@use "Helpers" as *;
+@use "Animations" as *;
 
+// Variables
 $Wapour-badge-size: 18px;
+
+--
 
 /* Prevent Borders moving the badge on webkit animation if added */
 .theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"]
@@ -62,7 +65,7 @@ $Wapour-badge-size: 18px;
     // left: 170px;
 
     // Without Nitro
-    left: 217px;
+    left: 218px;
 
     // Position Check
     // opacity: 0.5;
