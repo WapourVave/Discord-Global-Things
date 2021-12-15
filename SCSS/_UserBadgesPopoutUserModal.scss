@@ -7,6 +7,12 @@
 
 $Wapour-badge-size: 18px;
 
+/* Prevent Borders moving the badge on webkit animation if added */
+.theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"]
+{
+    position: relative;
+}
+
 /* Change animation for Popout so that the bubble isn't visible */
 .animatorLeft-1EQxU0 .userPopout-xaxa6l[data-user-id="142795541833580544"] /* From User List */
 {
