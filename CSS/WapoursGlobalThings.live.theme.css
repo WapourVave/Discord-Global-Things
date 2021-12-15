@@ -68,25 +68,23 @@
 /* True AMOLED Version */
 [id="Wapours Global Things Live-card"] .bd-version:after {
   font-size: 14px;
-  content: "v1.1.3 ";
+  content: "v1.1.6 ";
 }
 
 /* True AMOLED Author */
 [id="Wapours Global Things Live-card"] .bd-author:after,
 [id="Wapours Global Things Live-card"] .bd-title .bd-link:after {
   font-size: 14px;
-  content: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
+  content: "Wapour Vave#1388⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀Thank You Friend! 🙂";
 }
 
 /*-----------------------------------------
-	Helpers
+	Global Variables
+-----------------------------------------*/
+/*-----------------------------------------
+	Animations
 -----------------------------------------*/
 /* Animation Variables */
-:root {
-  --bubble-popin-time: 0.1s;
-  --bubble-popout-time: 0.1s;
-}
-
 /* Global Animations */
 @keyframes rotate {
   0% {
@@ -235,7 +233,7 @@
 /*----------------------------------------------------------------------------------*/
 /* Badge Info Bubble */
 .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:before {
-  -webkit-animation: popout-bubble var(--bubble-popout-time);
+  -webkit-animation: popout-bubble 0.1s;
   content: "";
   width: 0px;
   color: var(--text-normal);
@@ -255,7 +253,7 @@
 
 /* Bubble Hover */
 .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:hover:before {
-  -webkit-animation: popin-bubble var(--bubble-popin-time);
+  -webkit-animation: popin-bubble 0.1s;
   content: "Theme Developer";
   width: 105px;
   padding: 9px;
@@ -266,7 +264,7 @@
 
 /* Badge Info Triangle */
 .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:after {
-  -webkit-animation: popout-triangle var(--bubble-popout-time);
+  -webkit-animation: popout-triangle 0.1s;
   content: "";
   border-width: 0px 0px 0 0px;
   border-style: solid;
@@ -285,7 +283,8 @@
 /*-----------------------------------------
 	User Badges Popout User Modal
 -----------------------------------------*/
--- .theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"] {
+/* Prevent Borders moving the badge on webkit animation if added */
+.theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"] {
   position: relative;
 }
 
@@ -356,7 +355,7 @@
 /*----------------------------------------------------------------------------------*/
 /* Badge Info Bubble */
 .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:before {
-  -webkit-animation: popout-bubble var(--bubble-popout-time);
+  -webkit-animation: popout-bubble 0.1s;
   content: "";
   width: 0px;
   color: var(--text-normal);
@@ -376,7 +375,7 @@
 
 /* Bubble Hover */
 .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:hover:before {
-  -webkit-animation: popin-bubble var(--bubble-popin-time);
+  -webkit-animation: popin-bubble 0.1s;
   content: "Theme Developer";
   width: 105px;
   padding: 9px;
@@ -387,7 +386,7 @@
 
 /* Badge Info Triangle */
 .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:after {
-  -webkit-animation: popout-triangle var(--bubble-popout-time);
+  -webkit-animation: popout-triangle 0.1s;
   content: "";
   border-width: 0px 0px 0 0px;
   border-style: solid;
