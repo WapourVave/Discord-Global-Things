@@ -68,7 +68,7 @@
 /* True AMOLED Version */
 [id="Wapours Global Things Live-card"] .bd-version:after {
   font-size: 14px;
-  content: "v1.1.1 ";
+  content: "v1.1.2 ";
 }
 
 /* True AMOLED Author */
@@ -285,6 +285,11 @@
 /*-----------------------------------------
 	User Badges Popout User Modal
 -----------------------------------------*/
+/* Prevent Borders moving the badge on webkit animation if added */
+.theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"] {
+  position: relative;
+}
+
 /* Change animation for Popout so that the bubble isn't visible */
 .animatorLeft-1EQxU0 .userPopout-xaxa6l[data-user-id="142795541833580544"] {
   -webkit-animation: popin-modal-left 0.4s;
