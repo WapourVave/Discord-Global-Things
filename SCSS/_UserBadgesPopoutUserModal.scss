@@ -8,9 +8,13 @@
 $Wapour-badge-size: 18px;
 
 /* Change animation for Popout so that the bubble isn't visible */
-.userPopout-xaxa6l[data-user-id="142795541833580544"]
+.animatorLeft-1EQxU0 .userPopout-xaxa6l[data-user-id="142795541833580544"] /* From User List */
 {
-	-webkit-animation: popin-modal 0.4s;
+	-webkit-animation: popin-modal-left 0.4s;
+}
+.animatorRight-3i_YPs .userPopout-xaxa6l[data-user-id="142795541833580544"] /* From Chat */
+{
+	-webkit-animation: popin-modal-right 0.4s;
 }
 
 /* Fix Creation Date Plugin Bug with Animation */
