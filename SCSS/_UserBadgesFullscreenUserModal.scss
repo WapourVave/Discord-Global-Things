@@ -23,7 +23,7 @@ $Wapour-badge-size: 18px;
 /* Padding for Badge */
 .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .badgeList-1R1WgZ [aria-label="HypeSquad Brilliance"]
 {
-    margin-left: 22px;
+    margin-left: 23px;
 }
 
 /* Create Badge, Removes Banner */
@@ -40,6 +40,10 @@ $Wapour-badge-size: 18px;
     z-index: 1;
     top: 139px;
     left: 162px;
+
+    // Position Check
+    // opacity: 0.5;
+    // left: 186px;
 }
 
 /* Increase margin underneath banner to replace it */

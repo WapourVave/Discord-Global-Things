@@ -45,8 +45,18 @@ $Wapour-badge-size: 18px;
 
     position: absolute;
     z-index: 1;
+
     top: 78px;
-    left: 170px;
+
+    // With Nitro:
+    // left: 170px;
+
+    // Without Nitro
+    left: 217px;
+
+    // Position Check
+    // opacity: 0.5;
+    // left: 240px;
 }
 
 /* Increase margin underneath banner to replace it */
