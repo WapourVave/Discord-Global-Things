@@ -58,13 +58,13 @@ $Wapour-badge-size: 18px;
     position: absolute;
     z-index: 1;
 
-    top: var(--WapoursGlobalThings-badge-top);
+    top: var(--WapoursGlobalThings-popout-small-badg-top);
 
     // With Nitro:
     // left: 170px;
 
     // Without Nitro
-    left: var(--WapoursGlobalThings-badge-left);
+    left: var(--WapoursGlobalThings-popout-small-badg-left);
 
     // Position Check
     // opacity: 0.5;
