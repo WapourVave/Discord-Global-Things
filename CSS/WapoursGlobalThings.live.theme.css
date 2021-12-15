@@ -97,7 +97,19 @@
     transform: scale(1);
   }
 }
-@keyframes popin-modal {
+@keyframes popin-modal-left {
+  0% {
+    opacity: 0;
+    transform-origin: right;
+    transform: scale(0.5, 1);
+    -webkit-transform: translate3d(-10px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes popin-modal-right {
   0% {
     opacity: 0;
     transform-origin: right;
@@ -167,7 +179,7 @@
 /*----------------------------------------------------------------------------------*/
 /* Padding for Badge */
 .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .badgeList-1R1WgZ [aria-label="HypeSquad Brilliance"] {
-  margin-left: 22px;
+  margin-left: 23px;
 }
 
 /* Create Badge, Removes Banner */
@@ -269,8 +281,12 @@
 	User Badges Popout User Modal
 -----------------------------------------*/
 /* Change animation for Popout so that the bubble isn't visible */
-.userPopout-xaxa6l[data-user-id="142795541833580544"] {
-  -webkit-animation: popin-modal 0.4s;
+.animatorLeft-1EQxU0 .userPopout-xaxa6l[data-user-id="142795541833580544"] {
+  -webkit-animation: popin-modal-left 0.4s;
+}
+
+.animatorRight-3i_YPs .userPopout-xaxa6l[data-user-id="142795541833580544"] {
+  -webkit-animation: popin-modal-right 0.4s;
 }
 
 /* Fix Creation Date Plugin Bug with Animation */
@@ -299,7 +315,7 @@
   position: absolute;
   z-index: 1;
   top: 78px;
-  left: 170px;
+  left: 217px;
 }
 
 /* Increase margin underneath banner to replace it */
