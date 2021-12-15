@@ -3,12 +3,11 @@
 -----------------------------------------*/
 
 // Imports
+@use "GlobalVars" as *;
 @use "Animations" as *;
 
 // Variables
 $Wapour-badge-size: 18px;
-
---
 
 /* Prevent Borders moving the badge on webkit animation if added */
 .theme-dark .userPopout-xaxa6l[data-user-id="142795541833580544"]
@@ -59,13 +58,13 @@ $Wapour-badge-size: 18px;
     position: absolute;
     z-index: 1;
 
-    top: 78px;
+    top: var(--WapoursGlobalThings-badge-top);
 
     // With Nitro:
     // left: 170px;
 
     // Without Nitro
-    left: 218px;
+    left: var(--WapoursGlobalThings-badge-left);
 
     // Position Check
     // opacity: 0.5;
@@ -108,7 +107,7 @@ $Wapour-badge-size: 18px;
 /* Badge Info Bubble */
 .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:before
 {
-    -webkit-animation: popout-bubble var(--bubble-popout-time);
+    -webkit-animation: popout-bubble $bubble-popout-time;
 
 	content: "";
     width: 0px;
@@ -134,7 +133,7 @@ $Wapour-badge-size: 18px;
 /* Bubble Hover */
 .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:hover:before
 {
-    -webkit-animation: popin-bubble var(--bubble-popin-time);
+    -webkit-animation: popin-bubble $bubble-popin-time;
 
 	content: "Theme Developer";
 	width: 105px;
@@ -149,7 +148,7 @@ $Wapour-badge-size: 18px;
 /* Badge Info Triangle */
 .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:after
 {
-    -webkit-animation: popout-triangle var(--bubble-popout-time);
+    -webkit-animation: popout-triangle $bubble-popout-time;
 
     content: "";
 

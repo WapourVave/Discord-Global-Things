@@ -3,6 +3,7 @@
 -----------------------------------------*/
 
 // Imports
+@use "GlobalVars" as *;
 @use "Animations" as *;
 
 $Wapour-badge-size: 18px;
@@ -91,7 +92,7 @@ $Wapour-badge-size: 18px;
 /* Badge Info Bubble */
 .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:before
 {
-    -webkit-animation: popout-bubble var(--bubble-popout-time);
+    -webkit-animation: popout-bubble $bubble-popout-time;
 
 	content: "";
     width: 0px;
@@ -117,7 +118,7 @@ $Wapour-badge-size: 18px;
 /* Bubble Hover */
 .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:hover:before
 {
-    -webkit-animation: popin-bubble var(--bubble-popin-time);
+    -webkit-animation: popin-bubble $bubble-popin-time;
 
 	content: "Theme Developer";
 	width: 105px;
@@ -132,7 +133,7 @@ $Wapour-badge-size: 18px;
 /* Badge Info Triangle */
 .fullscreenOnMobile-1bD22y[data-user-id="142795541833580544"] .profileBanner-33-uE1:after
 {
-    -webkit-animation: popout-triangle var(--bubble-popout-time);
+    -webkit-animation: popout-triangle $bubble-popout-time;
 
     content: "";
 
