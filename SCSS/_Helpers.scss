@@ -1,3 +1,7 @@
+/*-----------------------------------------
+	Helpers
+-----------------------------------------*/
+
 // Global Variables
 $Wapour-pink: #ff007e;
 
@@ -58,5 +62,3 @@ $bubble-popout-time: 0.1s;
     0% { opacity: 1; transform: scale(1); content: ""; border-width: 10px 11px 0 11px; }
     100% { opacity: 0; transform: scale(0.9); border-width: 0px 0px 0 0px; }
 }
-
-/*----------------------------------------------------------------------------------*/
