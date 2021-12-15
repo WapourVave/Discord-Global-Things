@@ -8,10 +8,12 @@ $Wapour-pink: #ff007e;
 // Badge Variables
 $Wapour-badge: url('https://steamcommunity-a.akamaihd.net/economy/emoticonlarge/b1');
 
-// Animation Variables
-$bubble-popin-time: 0.1s;
-$bubble-popout-time: 0.1s;
-
+/* Animation Variables */
+:root
+{
+    --bubble-popin-time: 0.1s;
+    --bubble-popout-time: 0.1s;
+}
 
 // /* Root Variables */
 // :root
@@ -34,12 +36,12 @@ $bubble-popout-time: 0.1s;
 
 @keyframes popin-modal-left
 {
-    0% { opacity: 0; transform-origin: right; transform: scale(0.5, 1); -webkit-transform: translate3d(-10px,0,0); }
+    0% { opacity: 0; transform: scale(0.5, 1); -webkit-transform: translate3d(-10px, 0, 0); }
     100% { opacity: 1; transform: scale(1, 1); }
 }
 @keyframes popin-modal-right
 {
-    0% { opacity: 0; transform-origin: right; transform: scale(0.5, 1); -webkit-transform: translate3d(10px,0,0); }
+    0% { opacity: 0; transform: scale(0.5, 1); -webkit-transform: translate3d(10px, 0, 0); }
     100% { opacity: 1; transform: scale(1, 1); }
 }
 

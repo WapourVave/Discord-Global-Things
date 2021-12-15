@@ -99,7 +99,7 @@ $Wapour-badge-size: 18px;
 /* Badge Info Bubble */
 .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:before
 {
-    -webkit-animation: popout-bubble $bubble-popout-time;
+    -webkit-animation: popout-bubble var(--bubble-popout-time);
 
 	content: "";
     width: 0px;
@@ -125,7 +125,7 @@ $Wapour-badge-size: 18px;
 /* Bubble Hover */
 .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:hover:before
 {
-    -webkit-animation: popin-bubble $bubble-popin-time;
+    -webkit-animation: popin-bubble var(--bubble-popin-time);
 
 	content: "Theme Developer";
 	width: 105px;
@@ -140,7 +140,7 @@ $Wapour-badge-size: 18px;
 /* Badge Info Triangle */
 .userPopout-xaxa6l[data-user-id="142795541833580544"] .popoutBanner-19WKGg:after
 {
-    -webkit-animation: popout-triangle $bubble-popout-time;
+    -webkit-animation: popout-triangle var(--bubble-popout-time);
 
     content: "";
 
