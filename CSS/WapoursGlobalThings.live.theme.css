@@ -68,7 +68,7 @@
 /* True AMOLED Version */
 [id="Wapours Global Things Live-card"] .bd-version:after {
   font-size: 14px;
-  content: "v1.1.7 ";
+  content: "v1.1.8 ";
 }
 
 /* True AMOLED Author */
@@ -248,6 +248,7 @@
   position: absolute;
   left: -50px;
   bottom: 45px;
+  pointer-events: none;
   opacity: 0;
 }
 
@@ -272,6 +273,7 @@
   position: absolute;
   bottom: 42px;
   left: -2px;
+  pointer-events: none;
 }
 
 /* Triangle Hover */
@@ -370,6 +372,7 @@
   position: absolute;
   left: -50px;
   bottom: 44px;
+  pointer-events: none;
   opacity: 0;
 }
 
@@ -394,6 +397,7 @@
   position: absolute;
   bottom: 40px;
   left: -2px;
+  pointer-events: none;
 }
 
 /* Triangle Hover */

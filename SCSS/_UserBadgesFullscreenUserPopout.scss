@@ -112,6 +112,7 @@ $Wapour-badge-size: 18px;
 	left: -50px; 
 	bottom: 45px;
 
+    pointer-events: none;
 	opacity: 0;
 }
 
@@ -144,6 +145,8 @@ $Wapour-badge-size: 18px;
     position: absolute;
     bottom: 42px;
     left: -2px;
+
+    pointer-events: none;
 }
 
 /* Triangle Hover */
